@@ -1,0 +1,110 @@
+* {
+  font-family: sans-serif;
+  color: #fff;
+  transition: ease 0.3s;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url('./unsplash.jpg') center/cover;
+  /* background: linear-gradient(to top left, red, blue); */
+}
+
+#hero {
+  height: 242px;
+  padding: 3rem;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+@media (max-width: 702px) {
+  #hero {
+    height: auto;
+  }
+}
+
+#hero h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+#hero blockquote {
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+#hero .input-values {
+  font-size: 2rem;
+}
+
+#hero .input-values input {
+  width: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.19);
+}
+
+#hero .input-values input::placeholder {
+  color: #ffffff90;
+}
+
+#hero .input-values input:focus-visible {
+  outline: none;
+}
+
+#hero p {
+  display: none;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+#hero p.active {
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  #hero {
+    padding: 2rem;
+  }
+
+  #hero h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  #hero blockquote {
+    font-size: 1rem;
+  }
+
+  #hero p {
+    font-size: 1.5rem;
+  }
+
+  #hero .input-values {
+    font-size: 1.75rem;
+  }
+
+  #hero .input-values input {
+    width: 4.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 315px) {
+  #hero {
+    padding: 1rem;
+  }
+}
